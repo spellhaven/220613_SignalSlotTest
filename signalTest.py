@@ -23,8 +23,8 @@ class MyWindow(QWidget):
         vbox.addWidget(lcd)
         vbox.addWidget(dial)
 
-        vbox.addLayout(hbox) #vbox 밑에 hbox를 달아봐.
-        self.setLayout(vbox)
+        vbox.addLayout(hbox) # vbox 밑에 hbox를 달아봐.
+        self.setLayout(vbox) # self를 vbox 모양으로 만들어봐.
 
         dial.valueChanged.connect(lcd.display) #커넥트에선 display() 아니고 display... 크킄... 이름만... 크. 크킄...!
         btn1.clicked.connect(self.resizeBig)
